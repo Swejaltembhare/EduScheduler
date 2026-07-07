@@ -1,6 +1,7 @@
 import transporter from "../config/emailConfig.js";
 
 export const sendVerificationEmail = async (user, verificationLink) => {
+   console.log("Email function called");
   try {
     const mailOptions = {
       from: `"EduScheduler" <${process.env.EMAIL_USER}>`,

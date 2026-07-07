@@ -34,6 +34,7 @@ const tempEmailDomains = [
 ];
 
 export const register = async (req, res) => {
+  console.log("REGISTER API HIT");
   try {
     const { name, email, password, role, department, semester, adminKey, facultyKey } = req.body;
 
