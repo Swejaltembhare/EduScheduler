@@ -1,49 +1,26 @@
-// import nodemailer from 'nodemailer';
-
-// const sendEmail = async (to, subject, html) => {
-//   try {
-//     const transporter = nodemailer.createTransport({
-//       service: 'gmail',
-//       auth: {
-//         user: process.env.EMAIL_USER,
-//         pass: process.env.EMAIL_PASSWORD
-//       }
-//     });
-
-//     const mailOptions = {
-//       from: `"Attendance System" <${process.env.EMAIL_USER}>`,
-//       to: to,
-//       subject: subject,
-//       html: html
-//     };
-
-//     const info = await transporter.sendMail(mailOptions);
-//     return true;
-//   } catch (error) {
-//     console.error('Error sending email:', error);
-//     return false;
-//   }
-// };
-
-// export default sendEmail;
-
-
-
-import transporter from "../config/emailConfig.js";
+import nodemailer from 'nodemailer';
 
 const sendEmail = async (to, subject, html) => {
   try {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD
+      }
+    });
+
     const mailOptions = {
-      from: `"EduScheduler" <${process.env.EMAIL_USER}>`,
-      to,
-      subject,
-      html,
+      from: `"Attendance System" <${process.env.EMAIL_USER}>`,
+      to: to,
+      subject: subject,
+      html: html
     };
 
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
     return true;
   } catch (error) {
-    console.error("Error sending email:", error.message);
+    console.error('Error sending email:', error);
     return false;
   }
 };
