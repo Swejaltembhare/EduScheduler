@@ -1,25 +1,26 @@
-# EduSchedular
+## EduScheduler
 
-EduSchedular is a full-stack web application built to simplify academic scheduling and institutional management. It helps educational institutions efficiently manage timetables, subjects, classrooms, faculty, and administrative activities through a centralized digital platform.
+EduScheduler is a full-stack web application designed to simplify academic scheduling and institutional management. The platform enables educational institutions to efficiently manage timetables, classrooms, subjects, faculty, and administrative operations through a centralized and user-friendly digital system.
 
 ## Features
-
-- Create and manage academic timetables
-- Manage classrooms and student batches
-- Add, edit, and organize subjects
-- Faculty management system
-- Interactive dashboard with analytics and recent activities
-- Admin authentication and access control
+Automated and conflict-free timetable generation
+Classroom and student batch management
+Subject creation and organization
+Faculty management system
+Interactive dashboard with analytics and recent activities
+Secure admin authentication and role-based access control
+Responsive and intuitive user interface
 
 ## Tech Stack
+Technology	                Purpose
 
-| Technology | Usage |
-|------------|-------|
-| React | Frontend UI |
-| Vite | Build tool |
-| Node.js | Backend runtime |
-| Express.js | Server framework |
-| MongoDB | Database |
+React.js	                  Frontend User Interface
+Vite	                      Frontend Build Tool
+Node.js	                    Backend Runtime
+Express.js	                Server Framework
+MongoDB	                    Database
+Tailwind CSS	              Styling
+JWT	                        Authentication
 
 ## Project Structure
 
@@ -32,7 +33,7 @@ EduSchedular/
 
 ## Installation & Setup
 1. Clone the repository
-git clone https://github.com/Swejaltembhare/EduSchedular.git
+git clone https://github.com/Swejaltembhare/EduScheduler.git
 cd EduSchedular
 2. Install dependencies
 Backend
@@ -63,14 +64,11 @@ JWT_SECRET=your_secret_key
 <img width="1894" height="926" alt="image" src="https://github.com/user-attachments/assets/b9b400bc-6b5e-45b9-a3dd-d5ce31e8a629" />
 <img width="1883" height="910" alt="image" src="https://github.com/user-attachments/assets/1d70a616-740e-4a3f-9f0f-dce4aeed0585" />
 
-
-
 ## Future Improvements
 Mobile responsiveness
 Advanced analytics
 
-## Author
-
+## Contributors
 Swejal Tembhare, Arti Thakur, Sapna Choudhari
 
 GitHub: https://github.com/Swejaltembhare
