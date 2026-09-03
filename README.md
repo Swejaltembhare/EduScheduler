@@ -73,7 +73,7 @@ Swejal Tembhare, Arti Thakur, Sapna Choudhari
 
 GitHub: https://github.com/Swejaltembhare
 
-https://classroom-roan-eta.vercel.app/
+Web Link: https://classroom-roan-eta.vercel.app/
 
 ## Support
 
